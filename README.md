@@ -229,11 +229,6 @@ Expected result: **no analyzer issues and 21 passing tests**.
 - Testing successful, empty, malformed, offline, timeout, and responsive cases
 - Documenting and validating an API workflow with Postman
 
-## 🙏 Credits
-
-Artwork information and CC0 images are provided by the
-[Cleveland Museum of Art Open Access API](https://openaccess-api.clevelandart.org/).
-
 ---
 
 <p align="center">
