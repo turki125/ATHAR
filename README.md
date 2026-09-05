@@ -48,9 +48,9 @@ The animated wordmark introduces ATHAR, then the visual guide teaches visitors
 how to explore before they enter the collection.
 
 <p align="center">
-  <img src="images/splash-final.png" alt="ATHAR animated splash" width="215">
+  <img src="assets/images/splash-final.png" alt="ATHAR animated splash" width="215">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="images/onboarding-explore.png" alt="ATHAR Explore onboarding page" width="215">
+  <img src="assets/images/onboarding-explore.png" alt="ATHAR Explore onboarding page" width="215">
 </p>
 
 <p align="center"><sub>Animated splash &nbsp;•&nbsp; Interactive onboarding</sub></p>
@@ -61,7 +61,7 @@ A focused gallery presents reviewed artwork from the live museum API. Visitors
 can search by title or artist and open any work with one tap.
 
 <p align="center">
-  <img src="images/gallery-final.png" alt="ATHAR searchable gallery" width="230">
+  <img src="assets/images/gallery-final.png" alt="ATHAR searchable gallery" width="230">
 </p>
 
 <p align="center"><sub>Live collection with instant search</sub></p>
@@ -72,9 +72,9 @@ The details experience combines artwork imagery with its artist, date, medium,
 and museum description while preserving the catalogue-inspired layout.
 
 <p align="center">
-  <img src="images/details-overview.png" alt="ATHAR artwork overview" width="215">
+  <img src="assets/images/details-overview.png" alt="ATHAR artwork overview" width="215">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="images/details-story.png" alt="ATHAR artwork story" width="215">
+  <img src="assets/images/details-story.png" alt="ATHAR artwork story" width="215">
 </p>
 
 <p align="center"><sub>Artwork overview &nbsp;•&nbsp; Full museum story</sub></p>
@@ -85,9 +85,9 @@ The original fourth-screen experience turns close observation into a game:
 study a fragment, choose its title, reveal the full artwork, and build a score.
 
 <p align="center">
-  <img src="images/curator-challenge.png" alt="Curator's Eye fragment challenge" width="215">
+  <img src="assets/images/curator-challenge.png" alt="Curator's Eye fragment challenge" width="215">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="images/curator-reveal.png" alt="Curator's Eye artwork reveal" width="215">
+  <img src="assets/images/curator-reveal.png" alt="Curator's Eye artwork reveal" width="215">
 </p>
 
 <p align="center"><sub>Fragment challenge &nbsp;•&nbsp; Full artwork reveal</sub></p>
