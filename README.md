@@ -87,6 +87,10 @@ transition.
 
 ## Screenshots
 
+### Animated splash
+
+![ATHAR animated splash](docs/screenshots/splash.png)
+
 ### Guided welcome
 
 ![ATHAR guided welcome](docs/screenshots/welcome.png)
@@ -95,12 +99,13 @@ transition.
 
 ![ATHAR searchable gallery](docs/screenshots/gallery.png)
 
-The complete submission screenshot set demonstrates:
+### Artwork details
 
-1. Animated splash wordmark
-2. Searchable gallery
-3. Artwork details
-4. Curator's Eye fragment and reveal states
+![ATHAR artwork details](docs/screenshots/details.png)
+
+### Curator's Eye
+
+![ATHAR Curator's Eye](docs/screenshots/curators-eye.png)
 
 ## Credits
 
