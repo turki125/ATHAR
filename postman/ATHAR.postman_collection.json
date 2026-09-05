@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "9f8d1c11-8b4d-4a23-93a0-5a987f1fb318",
+    "name": "ATHAR — Cleveland Museum of Art",
+    "description": "The two related GET requests used by ATHAR. Run Gallery Collection first, then Artwork Details. The collection test saves the first returned ID as artwork_id.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1 — Gallery Collection",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is 200\", () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test(\"Response contains artwork data\", () => pm.expect(body.data).to.be.an(\"array\").that.is.not.empty);",
+              "pm.collectionVariables.set(\"artwork_id\", body.data[0].id);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/artworks/?skip=0&limit=100&q=landscape&cc0=&has_image=1&fields=id,title,creators,images,description,did_you_know,department,type,technique,culture,tombstone",
+          "host": ["{{base_url}}"],
+          "path": ["api", "artworks", ""],
+          "query": [
+            {"key": "skip", "value": "0"},
+            {"key": "limit", "value": "100"},
+            {"key": "q", "value": "landscape"},
+            {"key": "cc0", "value": ""},
+            {"key": "has_image", "value": "1"},
+            {"key": "fields", "value": "id,title,creators,images,description,did_you_know,department,type,technique,culture,tombstone"}
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2 — Artwork Details by ID",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is 200\", () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test(\"Returned ID matches selected ID\", () => pm.expect(String(body.data.id)).to.eql(String(pm.collectionVariables.get(\"artwork_id\"))));"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/artworks/{{artwork_id}}",
+          "host": ["{{base_url}}"],
+          "path": ["api", "artworks", "{{artwork_id}}"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://openaccess-api.clevelandart.org"
+    },
+    {
+      "key": "artwork_id",
+      "value": "171296"
+    }
+  ]
+}
