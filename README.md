@@ -40,7 +40,7 @@ story → Play Curator's Eye**
 - 📱 Responsive layouts tested on small screens and larger text settings
 - 🧪 Injectable HTTP client with 21 automated tests
 
-## 📸 Experience
+## 📱 App Walkthrough
 
 ### 1. A calm entrance
 
